@@ -1,1 +1,0 @@
-## 2017 NTU Harvard Student Association website
