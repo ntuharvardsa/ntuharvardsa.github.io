@@ -59,6 +59,7 @@ h3 {
 
 .newstitle {
   font-family: 'Marcellus', serif; 
+  text-transform: none;
 }
 
 h4 {
@@ -195,9 +196,14 @@ hr.star-light, hr.star-primary {
 }
 
 hr.star-primary:after {
-    background-color: #F3F3F1;
     color: #2C3E50;
+    background-color: white;
 }
+
+hr.star-primary-grey:after {
+  background-color: #F3F3F1;
+}
+
 hr.star-light:after, hr.star-primary:after {
     content: "\f005";
     font-family: FontAwesome;
