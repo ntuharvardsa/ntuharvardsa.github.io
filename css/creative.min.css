@@ -79,7 +79,7 @@ h4 {
   outline: none;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(251, 231, 114, 0.4);
+  background: #a51c30;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -90,7 +90,7 @@ h4 {
   border-radius: 50%
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
@@ -113,6 +113,52 @@ h4 {
   z-index: 2;
 }
 
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown:hover .dropbtn {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -248,7 +294,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', STFangsong , FangSong , serif;
 }
 .bg-primary {
   background-color: rgba(208, 5, 38, 0.88);
@@ -278,7 +324,7 @@ section {
 }
 
 .section_news {
-  background-color: cornsilk;
+  background-color: #EFEDDF;
 }
 
 aside {
@@ -288,7 +334,7 @@ aside {
   padding: 20px;
 }
 .navbar-default {
-  background-color: #F3F3F1;
+  background-color: #A51730;
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
@@ -333,8 +379,8 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: #A51C30;
+    border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -352,7 +398,7 @@ aside {
     color: white;
   }
   .navbar-default.affix {
-    background-color: #F3F3F1;
+    background-color: #A51730;
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
@@ -365,7 +411,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
-    color: #222222;
+    color: #FFFFFF;
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
@@ -490,7 +536,7 @@ img .center {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(214, 34, 64,0.8);
+  background: rgba(165,28,48,0.8);
   position: absolute;
   bottom: 0;
   text-align: center;
